@@ -35,9 +35,9 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(logarithm(2, 8), 3)
         self.assertEqual(logarithm(2, 4), 2)
 
-    # def test_log_invalid_base(self): # 1 assertion
-    #     # use same technique from test_divide_by_zero
-    #     fill in code
+    def test_log_invalid_base(self): # 1 assertion
+        with self.assertRaises(ValueError):
+            logarithm(2, -3)
     # ##########################
     
     ######## Partner 1
