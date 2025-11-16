@@ -30,8 +30,10 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ZeroDivisionError):
             divide(0, 5)
 
-    # def test_logarithm(self): # 3 assertions
-    #     fill in code
+    def test_logarithm(self): # 3 assertions
+        self.assertAlmostEqual(logarithm(3, 4), 1.26, places = 2)
+        self.assertEqual(logarithm(2, 8), 3)
+        self.assertEqual(logarithm(2, 4), 2)
 
     # def test_log_invalid_base(self): # 1 assertion
     #     # use same technique from test_divide_by_zero
