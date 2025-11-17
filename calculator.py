@@ -13,7 +13,7 @@ import math
 def square_root(a):
     try:
         if a < 0:
-            raise ValueError
+            raise ValueError("A can't be negative")
         return math.sqrt(a)
     except ValueError as e:
         raise ValueError(f"Error: {str(e)}") from None
