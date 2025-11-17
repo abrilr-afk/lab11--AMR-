@@ -38,7 +38,7 @@ def div(a, b):
 
 def logarithm(a, b):
     if a <= 0:
-        raise ValueError("Base of logarithm must be greater than 0 and not equal to 1.")
+        raise ValueError
     if b <- 0:
         raise ValueError("Logarithm argument must be greater than zero")
     return math.log(b, a)
