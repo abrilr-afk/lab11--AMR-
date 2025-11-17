@@ -16,8 +16,7 @@ def square_root(a):
             raise ValueError
         return math.sqrt(a)
     except ValueError as e:
-        print(f"Error: {e}")
-        raise
+        raise ValueError(f"Error: {str(e)}") from None
 
 def hypotenuse(a, b):
     return math.hypot(a, b)
