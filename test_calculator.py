@@ -50,12 +50,12 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(hypotenuse(0, 5), 5)
         self.assertAlmostEqual(hypotenuse(5, 5), math.sqrt(50), places=7)
 
-    # def test_sqrt(self): # 3 assertions
-    #     # Test for invalid argument, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #    square_root(NUM)
-    #     # Test basic function
-    #     fill in code
+    def test_sqrt(self): # 3 assertions
+        with self.assertRaises(ValueError):
+            square_root(-4)
+        self.assertEqual(square_root(9), 3)
+        self.assertEqual(square_root(4), 2)
+        self.assertEqual(square_root(25), 5)
     ##########################
 
 # Do not touch this
