@@ -46,7 +46,7 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             logarithm(-2, 3)
         with self.assertRaises(ValueError):
-            logarithm(-2, 4)
+            logarithm(0, 4)
     # ##########################
     
     ######## Partner 1
