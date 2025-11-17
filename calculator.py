@@ -41,7 +41,7 @@ def logarithm(a, b):
         raise ValueError("Logarithm argument must be greater than zero")
     return math.log(b, a)
 
-def exponent(a, b):
+def exp(a, b):
     return a ** b
 
 
