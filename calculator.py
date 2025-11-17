@@ -39,7 +39,7 @@ def logarithm(a, b):
     if a <= 0:
         raise ValueError("Base of logarithm must be greater than 0 and not equal to 1.")
     if b <- 0:
-        raise ValueError
+        raise ValueError("Logarithm argument must be greater than zero")
     return math.log(b, a)
 
 def exp(a, b):
