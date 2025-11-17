@@ -1,4 +1,6 @@
 #https://github.com/abrilr-afk/lab11--AMR-.git
+#Partner 1: Abril Rodriguez
+#Partner 2: Abril Rodriguez
 """
 calculator.py
 - Defines functions used to create a simple calculator
