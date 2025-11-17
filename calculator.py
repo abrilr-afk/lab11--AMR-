@@ -32,7 +32,7 @@ def mul(a, b):
 
 def div(a, b):
     if a == 0:
-        raise ZeroDivisionError
+        raise ZeroDivisionError("Cannot divide by zero.")
     return b / a
 
 def logarithm(a, b):
