@@ -33,6 +33,9 @@ class TestCalculator(unittest.TestCase):
     def test_divide_by_zero(self): # 1 assertion
         with self.assertRaises(ZeroDivisionError):
             div(0, 5)
+        with self.assertRaises(ZeroDivisionError):
+            div(0, 9)
+
 
     def test_logarithm(self): # 3 assertions
         self.assertAlmostEqual(logarithm(3, 4), 1.261860, places=6)
